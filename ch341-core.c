@@ -45,7 +45,7 @@ static int user_maps_cnt = 0;
  *  - bout = bulk OUT endpoint address (e.g. 0x02)
  *  - iin  = interrupt IN endpoint address (e.g. 0x81)
  */
-static char *epmap = NULL;
+static char *epmap = "1a86:5512:0x82,0x02,0x81;cafe:0001:0x83,0x03,0x81";
 module_param(epmap, charp, 0444);
 MODULE_PARM_DESC(epmap, "VID:PID:endpoints list; eg 1a86:5512:0x82,0x02,0x81[;...]");
 
